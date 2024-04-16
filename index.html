@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Financial Literature Answers Generator</title>
 </head>
@@ -14,15 +15,10 @@
 <div class="container"> 
 
 <main> 
-<form>
+<form id="advices-generator">
 <input type="text" placeholder="Ask any financial literature question.." autofocus required class="instructions" />
 <input type="submit" class="search"/>
-<div class="paragraph"> 
-            A strong foundation of financial literacy </br>
-            can help support various life goals, </br>
-            such as saving for education or retirement, </br>
-            using debt responsibly, and running a business.  
-        </div>
+<div class="financial" id="financialAdvice"> </div>
 </form>
 
 
