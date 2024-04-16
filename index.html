@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI Financial Literature Answers Generator</title>
+    <title>AI Financial Advices Answers Generator</title>
 </head>
 <body>
     
 <header> 
-        AI Financial Litereture Answers Generator 
+        AI Financial Advices Answers Generator 
 </header>
 <div class="container"> 
 
 <main> 
 <form id="advices-generator">
-<input type="text" placeholder="Ask any financial literature question.." autofocus required class="instructions" />
+<input type="text" placeholder="Ask any financial literature question.." autofocus required class="instructions" id="user-instructions" />
 <input type="submit" class="search"/>
 <div class="financial" id="financialAdvice"> </div>
 </form>
