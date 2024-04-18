@@ -17,15 +17,15 @@ body {background-color: #BCE7EC;
    max-width: 600px;
    margin: 25px auto;
    padding: 20px;
-
+   border-radius: 5px;
    background-color: white;
 
 }
-.advice {
+.advices-generator {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     padding: 20px;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
     margin-top: 10px;
 }
@@ -40,12 +40,20 @@ footer {
     }
 
     form {
+    
+    
+        border-radius: 15px;
         padding: 30px;
         background-color: white;
-        border-radius: 15px;
-
+        
     }
 
+
+    .form-container {
+        background-color: white;
+        text-align: left;
+        padding: 5px
+    }
     .instructions {
         padding: 14px;
         border-radius: 12px;
@@ -57,4 +65,24 @@ footer {
     .search {
         padding: 14px;
         border-radius: 12px;
+        cursor: pointer;
+        
+    }
+    .search:hover{
+        background-color:lightblue;
+        color: white;
+    }
+
+
+    @keyframes blink { 50% {opacity: 0.0;
+    }
+}
+    .blink {
+        animation: blink is the step-start 0s infinite;
+
+    }
+   
+    .question-example {
+
+        opacity: 0.5;
     }

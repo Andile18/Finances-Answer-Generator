@@ -20,6 +20,11 @@ let context = "you are looking for financial guidance, ways to make money, anyth
 let prompt = `user instructions: generate answers about ${instructionsInput.value} into a short paragraph, leave margin top before starting the sentence it must be bold, separate each line with <br/>`;
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+let GeneratorElement = document.querySelector ("#advices-generator");
+GeneratorElement.style.display = "block";
+
+
+
 console.log ("Generate answers");
 console.log (`(Prompt:   ${prompt}`);
 console.log (`Context:   ${context}`);
